@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Snake Game</title>
+		<script src="./assets/index.js" defer></script>
+		<link rel="stylesheet" href="./assets/index.css" />
+	</head>
+	<body>
+		<div class="dialouge">
+			<span class="gameover">Game Over</span>
+			<button class="start">Start</button>
+		</div>
+		<div class="score_board">
+			Score
+			<span class="score">0</span>
+		</div>
+		<div id="app"></div>
+		<script>
+			const base = document.getElementById("app");
+			for (let i = 0; i < 225; i++) {
+				const box = document.createElement("div");
+				box.className = "box";
+				base.append(box);
+			}
+		</script>
+	</body>
+</html>
